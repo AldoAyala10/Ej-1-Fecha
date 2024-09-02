@@ -1,5 +1,5 @@
 const express=require("express");
-const middleware = require("../middleware");
+const middleware = require("../Middleware/middleware");
 require("dotenv").config();
 const app=express();
 app.use(middleware);
@@ -22,3 +22,4 @@ app.listen(port, ()=>{
     console.log("Servidor en: http://localhost:"+port);
     
 });
+module.exports=middleware;
